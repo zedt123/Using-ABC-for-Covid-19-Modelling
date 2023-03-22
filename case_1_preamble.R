@@ -31,13 +31,3 @@ calc_distance <- function(D, D_star){
   return(sqrt(sum((D - D_star)**2)))
 }
 
-calc_distance_final_size <- function(mu, mu_star){
-  dist <- sqrt( (mu - mu_star) ^ 2)
-  return(dist)
-}
-
-summary_stat <- function(D){
-  mu <- tail(D, n = 1)
-  return(mu)
-}
-
